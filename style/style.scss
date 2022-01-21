@@ -1,0 +1,209 @@
+*,*::after,*::before {
+    padding: 0%;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+aside {
+height: 100vh;
+width: 25vw;
+background-color: rgb(109, 26, 26);
+color: white;
+position: absolute;
+@media (max-width:650px) {
+    width: 50vw;
+}
+
+h1 {
+    font-size: 9em;
+    letter-spacing: .1em;
+    @media (max-width:650px) {
+font-size: 4em;
+    }
+}
+
+.text {
+    position: relative;
+    top:50%;
+    margin-left:30%;
+    display: flex;
+    flex-direction: column;
+    @media (max-width:650px) {
+        margin-left:10%;
+    }
+   
+
+    img {
+        width: 40px;
+        height: 40px;
+
+    }
+
+    .details {
+        display: flex;
+        gap: 10px;
+        margin-left: 20%;
+       
+        .plus {
+            cursor: pointer;
+        }
+    }
+}
+
+}
+
+span{
+    display: flex;
+    gap:10px;
+    cursor: pointer;
+
+    p {
+        font-size: 1.5em;
+       margin-top: 5px;
+       white-space: nowrap;
+        }
+}
+body {
+   min-height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+   background-image: url("../Assets/Coding-Challenge-Image.png") ;
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+.socials {
+    position: absolute;
+    bottom: 5px;
+    right:15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section {
+    position: absolute;
+    left:10px;
+    bottom: -100px;
+    height: 75vh;
+    width:50vw;
+    background-color: white;
+    color:black;
+    
+    
+    
+    @media (max-width:1000px) {
+        height: auto;
+        width: 85vw;
+        margin: auto;
+        padding-bottom: 4em ;
+    }
+    @media (max-width:650px) {
+       bottom: -300px;
+       left:0px;
+      margin-right: 20%;
+    
+    }
+    @media (max-width:400px) {
+        bottom: -500px;
+    }
+
+
+    h3 {
+        font-size: 2em;
+        width: 100%;
+        margin-left:92%;
+        margin-top: 2%;
+        color: rgb(109, 26, 26);
+        cursor: pointer;
+        
+    }
+
+    p {
+        width: 80%;
+        margin: auto;
+        margin-top: 5%;
+        line-height: 1.7em;
+    }
+    h2 {
+        font-size: 4em;
+        margin-left:8%;
+        color:rgb(109, 26, 26); 
+    }
+
+    button {
+        color: white;
+        padding: 12px 2.2em;
+        margin-top: 5%;
+        margin-left: 10%;
+        border: none;
+        cursor: pointer;
+        background: linear-gradient(90deg, rgb(109, 26, 26) 0%, rgba(109, 26, 26, 0.6) 70%); ;
+
+    }
+
+    hr {
+        width: 80%;
+        margin: auto;
+        height: 2px;
+        margin-top: 10px;
+        background: linear-gradient(90deg, rgb(109, 26, 26) 0%, rgba(109, 26, 26, 0) 70%); 
+        border: none;
+    }
+}
+
+
+.hide{
+    display: none !important;
+}
+
+
+
+.active{
+    display: block;
+    animation-fill-mode: forwards;
+    animation: open 1s;
+    
+}
+
+@keyframes open {
+    0% {
+      transform: scale(0);
+      transform: translateY(20%);
+      opacity: 0;
+    }
+  
+    100% {
+     transform: scale(1);
+     transform: translateY(0);
+     opacity: 1;
+   
+    }
+  }
+
+  @keyframes close {
+    0% {
+        transform: scale(1);
+        transform: translateY(0%);
+        opacity: 1;
+      }
+    
+      100% {
+       transform: scale(0);
+       transform: translateY(20%);
+       opacity: 0;
+     
+      }
+
+    
+  }
+
+  .close {
+    animation-fill-mode: forwards;
+    animation: close 2s ;
+}
+
+.socials {
+    cursor: pointer;
+}
