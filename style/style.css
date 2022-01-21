@@ -193,68 +193,52 @@ section hr {
 
 @-webkit-keyframes open {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
+    -webkit-transform: translateY(20%) scale(0);
+            transform: translateY(20%) scale(0);
     opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
     opacity: 1;
   }
 }
 
 @keyframes open {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
+    -webkit-transform: translateY(20%) scale(0);
+            transform: translateY(20%) scale(0);
     opacity: 0;
   }
   100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
     opacity: 1;
   }
 }
 
 @-webkit-keyframes close {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
+    -webkit-transform: translateY(20%) scale(0);
+            transform: translateY(20%) scale(0);
     opacity: 0;
   }
 }
 
 @keyframes close {
   0% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
+    -webkit-transform: translateY(0%) scale(1);
+            transform: translateY(0%) scale(1);
     opacity: 1;
   }
   100% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
-    -webkit-transform: translateY(20%);
-            transform: translateY(20%);
+    -webkit-transform: translateY(20%) scale(0);
+            transform: translateY(20%) scale(0);
     opacity: 0;
   }
 }
@@ -262,8 +246,8 @@ section hr {
 .close {
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
-  -webkit-animation: close 2s;
-          animation: close 2s;
+  -webkit-animation: close 1s;
+          animation: close 1s;
 }
 
 .socials {
